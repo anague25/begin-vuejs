@@ -1,5 +1,24 @@
 const app = Vue.createApp({
-    template:'<h1>welcome my friends...</h1>'
+    data(){
+        return{
+            icon:'🐱‍🏍',
+           user:[
+            {
+                author:'sonna',
+                age : 25,
+                bio:'a cool guy'
+               }
+           ]
+        }
+    },
+    methods:{
+        augmenterAge(){
+            this.user[0].age++;
+        },
+        diminuerAge(){
+            this.user[0].age--;
+        }
+    }
 
 });
 

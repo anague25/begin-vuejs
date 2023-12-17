@@ -8,7 +8,13 @@
 </head>
 <body>
     <div id="app">
-        <h1>welcome my friends</h1>
+        <h1>welcome my friends...{{icon}}</h1>
+        <p>{{user[0].author}}</p>
+        <p>{{user[0].age}}</p>
+        <p>{{user[0].bio}}</p>
+
+        <button v-on:click="augmenterAge" >increase</button>
+        <button v-on:click="diminuerAge" >reduce</button>
 
     </div>
 
